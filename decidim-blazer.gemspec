@@ -16,7 +16,13 @@ Gem::Specification.new do |s|
   s.summary = "A decidim blazer module"
   s.description = "Business intelligence made simple."
 
-  s.files = Dir["{app,config,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
+
+  s.add_dependency "chartkick"
+  s.add_dependency "groupdate"
+  s.add_dependency "hightop"
+  s.add_dependency "active_median"
+  s.add_dependency "blazer"
 
   s.add_dependency "decidim-core"
 end
