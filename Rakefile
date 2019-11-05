@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require "byebug"
 require "decidim/dev/common_rake"
 
 def copy_config_file(path)
