@@ -12,7 +12,7 @@ Space.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-blazer
+gem 'decidim-blazer'
 ```
 
 And then execute:
@@ -20,6 +20,17 @@ And then execute:
 ```bash
 bundle
 ```
+
+install migrations:
+```bash
+bundle exec rake decidim_blazer:install:migrations
+```
+
+then:
+```bash
+bundle exec rake db:migrate
+```
+
 
 ## Contributing
 
