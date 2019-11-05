@@ -12,7 +12,7 @@ Space.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-blazer
+gem 'decidim-blazer'
 ```
 
 And then execute:
@@ -20,6 +20,25 @@ And then execute:
 ```bash
 bundle
 ```
+
+install migrations:
+```bash
+bundle exec rake decidim_blazer:install:migrations
+```
+
+then:
+```bash
+bundle exec rake db:migrate
+```
+
+if you want to use your production database with the current user, set it in config/secrets.yml
+
+````yaml
+blazer:
+    use_production_database: true
+````
+
+else set `BLAZER_DATABASE_URL` env
 
 ## Contributing
 

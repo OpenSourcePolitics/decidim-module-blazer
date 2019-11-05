@@ -6,6 +6,7 @@ ruby RUBY_VERSION
 
 gem "decidim", git: "https://github.com/decidim/decidim"
 gem "decidim-blazer", path: "."
+gem "bootsnap"
 
 gem "puma", "~> 3.12"
 gem "uglifier", "~> 4.1"
