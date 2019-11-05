@@ -12,7 +12,3 @@ if Rails.application.secrets.dig(:blazer, :use_production_database)
 
   ENV["BLAZER_DATABASE_URL"] = "#{db["adapter"]}://#{credentials}#{db["host"] || "127.0.0.1"}:#{db["port"] || "5432"}/#{db["database"]}"
 end
-
-Blazer.register_query(:registrations_count) do
-
-end
