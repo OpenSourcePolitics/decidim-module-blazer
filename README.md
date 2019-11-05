@@ -31,6 +31,14 @@ then:
 bundle exec rake db:migrate
 ```
 
+if you want to use your production database with the current user, set it in config/secrets.yml
+
+````yaml
+blazer:
+    use_production_database: true
+````
+
+else set `BLAZER_DATABASE_URL` env
 
 ## Contributing
 
